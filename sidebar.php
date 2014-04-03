@@ -48,146 +48,70 @@
       <?php 
           $url=curPageURL();
           if (strpos($url,'entertainment') !== false) {
-            $ads_url=ot_get_option( 'entertainment_ad5_url' );
-            $ads_image=ot_get_option( 'entertainment_ad5_image' );
+            $ads=ot_get_option( 'entertainment_ad5' );
           }
           else if (strpos($url,'arts-culture') !== false) {
-            $ads_url=ot_get_option( 'arts-culture_ad5_url' );
-            $ads_image=ot_get_option( 'arts-culture_ad5_image' );
+            $ads=ot_get_option( 'arts-culture_ad5' );
           }
           else if (strpos($url,'community') !== false) {
-            $ads_url=ot_get_option( 'community_ad5_url' );
-            $ads_image=ot_get_option( 'community_ad5_image' );
+            $ads=ot_get_option( 'community_ad5' );
           }
           else if (strpos($url,'food-dining') !== false) {
-            $ads_url=ot_get_option( 'food-dining_ad5_url' );
-            $ads_image=ot_get_option( 'food-dining_ad5_image' );
+            $ads=ot_get_option( 'food-dining_ad5' );
           }
           else if (strpos($url,'qh-sensation') !== false) {
-            $ads_url=ot_get_option( 'qh-sensation_ad5_url' );
-            $ads_image=ot_get_option( 'qh-sensation_ad5_image' );
+            $ads=ot_get_option( 'qh-sensation_ad5' );
           }
           else if (strpos($url,'sports') !== false) {
-            $ads_url=ot_get_option( 'sports_ad5_url' );
-            $ads_image=ot_get_option( 'sports_ad5_image' );
+            $ads=ot_get_option( 'sports_ad5' );
           }
           else if (strpos($url,'movie') !== false) {
-            $ads_url=ot_get_option( 'movie_ad5_url' );
-            $ads_image=ot_get_option( 'movie_ad5_image' );
+            $ads=ot_get_option( 'movie_ad5' );
           }
           else if (strpos($url,'about-qh') !== false) {
-            $ads_url=ot_get_option( 'about-qh_ad5_url' );
-            $ads_image=ot_get_option( 'about-qh_ad5_image' );
+            $ads=ot_get_option( 'about-qh_ad5' );
           }
           else{
-            $ads_url=ot_get_option( 'ad5_url' );
-            $ads_image=ot_get_option( 'ad5_image' );
+            $ads=ot_get_option( 'ad5' );
           }
           //arts-culture
         ?>
       <div class="row-sidebar">
-      <a href="<?php echo $ads_url;?>">
-	     <?php 
-          $ext=pathinfo($ads_image, PATHINFO_EXTENSION); 
-          if($ext!='swf'){
-        ?>
-        <img src="<?php echo $ads_image;?>" width="268" height="226">
-        <?php } else { ?>
-          <object id="flashcontent" 
-              classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-              width="268px" 
-              height="226px">
-              <param name="movie" value="<?php echo $ads_image;?>" />
-              <!--[if !IE]>-->
-              <object type="application/x-shockwave-flash" 
-                      data="<?php echo $ads_image;?>" 
-                      width="268px" 
-                      height="226px">
-              <!--<![endif]-->
-             
-                <p>
-                  flash is disabled on your browser
-                </p>
-             
-              <!--[if !IE]>-->
-              </object>
-              <!--<![endif]-->
-             
-            </object>
-        <?php } ?>
-        </a>
+        <?php echo $ads;?>
       </div>
       <?php 
           $url=curPageURL();
           if (strpos($url,'entertainment') !== false) {
-            $ads_url=ot_get_option( 'entertainment_ad6_url' );
-            $ads_image=ot_get_option( 'entertainment_ad6_image' );
+            $ads=ot_get_option( 'entertainment_ad6' );
           }
           else if (strpos($url,'arts-culture') !== false) {
-            $ads_url=ot_get_option( 'arts-culture_ad6_url' );
-            $ads_image=ot_get_option( 'arts-culture_ad6_image' );
+            $ads=ot_get_option( 'arts-culture_ad6' );
           }
           else if (strpos($url,'community') !== false) {
-            $ads_url=ot_get_option( 'community_ad6_url' );
-            $ads_image=ot_get_option( 'community_ad6_image' );
+            $ads=ot_get_option( 'community_ad6' );
           }
           else if (strpos($url,'food-dining') !== false) {
-            $ads_url=ot_get_option( 'food-dining_ad6_url' );
-            $ads_image=ot_get_option( 'food-dining_ad6_image' );
+            $ads=ot_get_option( 'food-dining_ad6' );
           }
           else if (strpos($url,'qh-sensation') !== false) {
-            $ads_url=ot_get_option( 'qh-sensation_ad6_url' );
-            $ads_image=ot_get_option( 'qh-sensation_ad6_image' );
+            $ads=ot_get_option( 'qh-sensation_ad6' );
           }
           else if (strpos($url,'sports') !== false) {
-            $ads_url=ot_get_option( 'sports_ad6_url' );
-            $ads_image=ot_get_option( 'sports_ad6_image' );
+            $ads=ot_get_option( 'sports_ad6' );
           }
           else if (strpos($url,'movie') !== false) {
-            $ads_url=ot_get_option( 'movie_ad6_url' );
-            $ads_image=ot_get_option( 'movie_ad6_image' );
+            $ads=ot_get_option( 'movie_ad6' );
           }
           else if (strpos($url,'about-qh') !== false) {
-            $ads_url=ot_get_option( 'about-qh_ad6_url' );
-            $ads_image=ot_get_option( 'about-qh_ad6_image' );
+            $ads=ot_get_option( 'about-qh_ad6' );
           }
           else{
-            $ads_url=ot_get_option( 'ad6_url' );
-            $ads_image=ot_get_option( 'ad6_image' );
+            $ads=ot_get_option( 'ad6' );
           }
           //arts-culture
         ?>       
       <div class="row-sidebar">
-        <a href="<?php echo $ads_url;?>">
-       <?php 
-          $ext=pathinfo($ads_image, PATHINFO_EXTENSION); 
-          if($ext!='swf'){
-        ?>
-        <img src="<?php echo $ads_image;?>" width="268" height="205">
-        <?php } else { ?>
-          <object id="flashcontent" 
-              classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-              width="268px" 
-              height="205px">
-              <param name="movie" value="<?php echo $ads_image;?>" />
-              <!--[if !IE]>-->
-              <object type="application/x-shockwave-flash" 
-                      data="<?php echo $ads_image;?>" 
-                      width="268px" 
-                      height="205px">
-              <!--<![endif]-->
-             
-                <p>
-                  flash is disabled on your browser
-                </p>
-             
-              <!--[if !IE]>-->
-              </object>
-              <!--<![endif]-->
-             
-            </object>
-        <?php } ?>
-        </a>
+        <?php echo $ads;?>
       </div>
       <div class="row-sidebar" >
         <?php include('include/calender-widget/calender_cust_widget.php'); ?>

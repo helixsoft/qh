@@ -1514,7 +1514,7 @@ $cnt++;
 
   <div class="row-full clearfix">
 
-    <div class="body-lower-banner"> <a href="<?php echo ot_get_option( 'ad7_url' );?>"><img src="<?php echo ot_get_option( 'ad7_image' );?>" width="680" height="136"></a> </div>
+    <?php include_once('body-lower-banner.php') ?>
 
   </div>
 

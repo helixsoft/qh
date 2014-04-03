@@ -222,36 +222,28 @@
           <?php 
           $url=curPageURL();
           if (strpos($url,'entertainment') !== false) {
-            $ads_url=ot_get_option( 'entertainment_ad3_url' );
-            $ads_image=ot_get_option( 'entertainment_ad3_image' );
+            $ads=ot_get_option( 'entertainment_ad3' );
           }
           else if (strpos($url,'arts-culture') !== false) {
-            $ads_url=ot_get_option( 'arts-culture_ad3_url' );
-            $ads_image=ot_get_option( 'arts-culture_ad3_image' );
+            $ads=ot_get_option( 'arts-culture_ad3' );
           }
           else if (strpos($url,'community') !== false) {
-            $ads_url=ot_get_option( 'community_ad3_url' );
-            $ads_image=ot_get_option( 'community_ad3_image' );
+            $ads=ot_get_option( 'community_ad3' );
           }
           else if (strpos($url,'food-dining') !== false) {
-            $ads_url=ot_get_option( 'food-dining_ad3_url' );
-            $ads_image=ot_get_option( 'food-dining_ad3_image' );
+            $ads=ot_get_option( 'food-dining_ad3' );
           }
           else if (strpos($url,'qh-sensation') !== false) {
-            $ads_url=ot_get_option( 'qh-sensation_ad3_url' );
-            $ads_image=ot_get_option( 'qh-sensation_ad3_image' );
+            $ads=ot_get_option( 'qh-sensation_ad3' );
           }
           else if (strpos($url,'sports') !== false) {
-            $ads_url=ot_get_option( 'sports_ad3_url' );
-            $ads_image=ot_get_option( 'sports_ad3_image' );
+            $ads=ot_get_option( 'sports_ad3' );
           }
           else if (strpos($url,'movie') !== false) {
-            $ads_url=ot_get_option( 'movie_ad3_url' );
-            $ads_image=ot_get_option( 'movie_ad3_image' );
+            $ads=ot_get_option( 'movie_ad3' );
           }
           else if (strpos($url,'about-qh') !== false) {
-            $ads_url=ot_get_option( 'about-qh_ad3_url' );
-            $ads_image=ot_get_option( 'about-qh_ad3_image' );
+            $ads=ot_get_option( 'about-qh_ad3' );
           }
           else{
             $ads=ot_get_option( 'ad3' );
@@ -264,36 +256,28 @@
         <?php 
           $url=curPageURL();
           if (strpos($url,'entertainment') !== false) {
-            $ads_url=ot_get_option( 'entertainment_ad4_url' );
-            $ads_image=ot_get_option( 'entertainment_ad4_image' );
+            $ads=ot_get_option( 'entertainment_ad4' );
           }
           else if (strpos($url,'arts-culture') !== false) {
-            $ads_url=ot_get_option( 'arts-culture_ad4_url' );
-            $ads_image=ot_get_option( 'arts-culture_ad4_image' );
+            $ads=ot_get_option( 'arts-culture_ad4' );
           }
           else if (strpos($url,'community') !== false) {
-            $ads_url=ot_get_option( 'community_ad4_url' );
-            $ads_image=ot_get_option( 'community_ad4_image' );
+            $ads=ot_get_option( 'community_ad4' );
           }
           else if (strpos($url,'food-dining') !== false) {
-            $ads_url=ot_get_option( 'food-dining_ad4_url' );
-            $ads_image=ot_get_option( 'food-dining_ad4_image' );
+            $ads=ot_get_option( 'food-dining_ad4' );
           }
           else if (strpos($url,'qh-sensation') !== false) {
-            $ads_url=ot_get_option( 'qh-sensation_ad4_url' );
-            $ads_image=ot_get_option( 'qh-sensation_ad4_image' );
+            $ads=ot_get_option( 'qh-sensation_ad4' );
           }
           else if (strpos($url,'sports') !== false) {
-            $ads_url=ot_get_option( 'sports_ad4_url' );
-            $ads_image=ot_get_option( 'sports_ad4_image' );
+            $ads=ot_get_option( 'sports_ad4' );
           }
           else if (strpos($url,'movie') !== false) {
-            $ads_url=ot_get_option( 'movie_ad4_url' );
-            $ads_image=ot_get_option( 'movie_ad4_image' );
+            $ads=ot_get_option( 'movie_ad4' );
           }
           else if (strpos($url,'about-qh') !== false) {
-            $ads_url=ot_get_option( 'about-qh_ad4_url' );
-            $ads_image=ot_get_option( 'about-qh_ad4_image' );
+            $ads=ot_get_option( 'about-qh_ad4' );
           }
           else{
             $ads=ot_get_option( 'ad4' );

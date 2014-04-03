@@ -148,9 +148,7 @@ $feat_image_path = wp_get_attachment_url( get_post_thumbnail_id($issue_id));
             </div>
         <!--media box end-->
         <div class="row-full clearfix">
-            <div class="body-lower-banner">
-                <a href="<?php echo ot_get_option( 'ad7_url' );?>"><img src="<?php echo ot_get_option( 'ad7_image' );?>" width="680" height="136"></a>
-            </div>
+            <?php include_once('body-lower-banner.php') ?>
         </div>
     </div>
     <!--left body end-->    

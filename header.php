@@ -16,36 +16,28 @@
 <?php 
   $url=curPageURL();
   if (strpos($url,'entertainment') !== false) {
-    $ads_url=ot_get_option( 'entertainment_ad1_url' );
-    $ads_image=ot_get_option( 'entertainment_ad1_image' );
+    $ads=ot_get_option( 'entertainment_header1' );
   }
   else if (strpos($url,'arts-culture') !== false) {
-    $ads_url=ot_get_option( 'arts-culture_ad1_url' );
-    $ads_image=ot_get_option( 'arts-culture_ad1_image' );
+    $ads=ot_get_option( 'arts-culture_header1' );
   }
   else if (strpos($url,'community') !== false) {
-    $ads_url=ot_get_option( 'community_ad1_url' );
-    $ads_image=ot_get_option( 'community_ad1_image' );
+    $ads=ot_get_option( 'community_header1' );
   }
   else if (strpos($url,'food-dining') !== false) {
-    $ads_url=ot_get_option( 'food-dining_ad1_url' );
-    $ads_image=ot_get_option( 'food-dining_ad1_image' );
+    $ads=ot_get_option( 'food-dining_header1' );
   }
   else if (strpos($url,'qh-sensation') !== false) {
-    $ads_url=ot_get_option( 'qh-sensation_ad1_url' );
-    $ads_image=ot_get_option( 'qh-sensation_ad1_image' );
+    $ads=ot_get_option( 'qh-sensation_header1' );
   }
   else if (strpos($url,'sports') !== false) {
-    $ads_url=ot_get_option( 'sports_ad1_url' );
-    $ads_image=ot_get_option( 'sports_ad1_image' );
+    $ads=ot_get_option( 'sports_header1' );
   }
   else if (strpos($url,'movie') !== false) {
-    $ads_url=ot_get_option( 'movie_ad1_url' );
-    $ads_image=ot_get_option( 'movie_ad1_image' );
+    $ads=ot_get_option( 'movie_header1' );
   }
   else if (strpos($url,'about-qh') !== false) {
-    $ads_url=ot_get_option( 'about-qh_ad1_url' );
-    $ads_image=ot_get_option( 'about-qh_ad1_image' );
+    $ads=ot_get_option( 'about-qh_header1' );
   }
   else{
     $header=ot_get_option( 'header1' );
@@ -182,36 +174,28 @@ wp_head();
         <?php 
           $url=curPageURL();
           if (strpos($url,'entertainment') !== false) {
-            $ads_url=ot_get_option( 'entertainment_ad1_url' );
-            $ads_image=ot_get_option( 'entertainment_ad1_image' );
+            $ads=ot_get_option( 'entertainment_ad1' );
           }
           else if (strpos($url,'arts-culture') !== false) {
-            $ads_url=ot_get_option( 'arts-culture_ad1_url' );
-            $ads_image=ot_get_option( 'arts-culture_ad1_image' );
+            $ads=ot_get_option( 'arts-culture_ad1' );
           }
           else if (strpos($url,'community') !== false) {
-            $ads_url=ot_get_option( 'community_ad1_url' );
-            $ads_image=ot_get_option( 'community_ad1_image' );
+            $ads=ot_get_option( 'community_ad1' );
           }
           else if (strpos($url,'food-dining') !== false) {
-            $ads_url=ot_get_option( 'food-dining_ad1_url' );
-            $ads_image=ot_get_option( 'food-dining_ad1_image' );
+            $ads=ot_get_option( 'food-dining_ad1' );
           }
           else if (strpos($url,'qh-sensation') !== false) {
-            $ads_url=ot_get_option( 'qh-sensation_ad1_url' );
-            $ads_image=ot_get_option( 'qh-sensation_ad1_image' );
+            $ads=ot_get_option( 'qh-sensation_ad1' );
           }
           else if (strpos($url,'sports') !== false) {
-            $ads_url=ot_get_option( 'sports_ad1_url' );
-            $ads_image=ot_get_option( 'sports_ad1_image' );
+            $ads=ot_get_option( 'sports_ad1' );
           }
           else if (strpos($url,'movie') !== false) {
-            $ads_url=ot_get_option( 'movie_ad1_url' );
-            $ads_image=ot_get_option( 'movie_ad1_image' );
+            $ads=ot_get_option( 'movie_ad1' );
           }
           else if (strpos($url,'about-qh') !== false) {
-            $ads_url=ot_get_option( 'about-qh_ad1_url' );
-            $ads_image=ot_get_option( 'about-qh_ad1_image' );
+            $ads=ot_get_option( 'about-qh_ad1' );
           }
           else{
             $ads=ot_get_option( 'ad1' );
@@ -333,36 +317,28 @@ wp_head();
          <?php 
           $url=curPageURL();
           if (strpos($url,'entertainment') !== false) {
-            $ads_url=ot_get_option( 'entertainment_ad2_url' );
-            $ads_image=ot_get_option( 'entertainment_ad2_image' );
+            $ads=ot_get_option( 'entertainment_ad2' );
           }
           else if (strpos($url,'arts-culture') !== false) {
-            $ads_url=ot_get_option( 'arts-culture_ad2_url' );
-            $ads_image=ot_get_option( 'arts-culture_ad2_image' );
+            $ads=ot_get_option( 'arts-culture_ad2' );
           }
           else if (strpos($url,'community') !== false) {
-            $ads_url=ot_get_option( 'community_ad2_url' );
-            $ads_image=ot_get_option( 'community_ad2_image' );
+            $ads=ot_get_option( 'community_ad2' );
           }
           else if (strpos($url,'food-dining') !== false) {
-            $ads_url=ot_get_option( 'food-dining_ad2_url' );
-            $ads_image=ot_get_option( 'food-dining_ad2_image' );
+            $ads=ot_get_option( 'food-dining_ad2' );
           }
           else if (strpos($url,'qh-sensation') !== false) {
-            $ads_url=ot_get_option( 'qh-sensation_ad2_url' );
-            $ads_image=ot_get_option( 'qh-sensation_ad2_image' );
+            $ads=ot_get_option( 'qh-sensation_ad2' );
           }
           else if (strpos($url,'sports') !== false) {
-            $ads_url=ot_get_option( 'sports_ad2_url' );
-            $ads_image=ot_get_option( 'sports_ad2_image' );
+            $ads=ot_get_option( 'sports_ad2' );
           }
           else if (strpos($url,'movie') !== false) {
-            $ads_url=ot_get_option( 'movie_ad2_url' );
-            $ads_image=ot_get_option( 'movie_ad2_image' );
+            $ads=ot_get_option( 'movie_ad2' );
           }
           else if (strpos($url,'about-qh') !== false) {
-            $ads_url=ot_get_option( 'about-qh_ad2_url' );
-            $ads_image=ot_get_option( 'about-qh_ad2_image' );
+            $ads=ot_get_option( 'about-qh_ad2' );
           }
           else{
             $ads=ot_get_option( 'ad2' );

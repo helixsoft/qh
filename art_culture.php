@@ -64,9 +64,7 @@ $total_p=$p_t-1;
     <div class='b_see_more' style='display:none'>
 <?php } ?>
 <?php if ($cnt==2) {?>
-  <div class="center-ad">
-    <a href="<?php echo ot_get_option( 'ad8_url' );?>"><img src="<?php echo ot_get_option( 'ad8_image' );?>" width="675" height="119"></a>
-  </div>
+  <?php include_once('center-ad.php') ?>
 <?php } ?>
 <?php if($cnt%2==0){ ?>
          <div class="box-inner">
@@ -112,9 +110,7 @@ $total_p=$p_t-1;
                 </div>
             </div>
             <div class="row-full clearfix">
-              <div class="body-lower-banner">
-                  <a href="<?php echo ot_get_option( 'ad7_url' );?>"><img src="<?php echo ot_get_option( 'ad7_image' );?>" width="680" height="136"></a>
-              </div>
+             <?php include_once('body-lower-banner.php') ?>
             </div>
         </div>
         <!--media box end-->
