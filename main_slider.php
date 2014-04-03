@@ -322,43 +322,12 @@
             $ads_image=ot_get_option( 'about-qh_ad3_image' );
           }
           else{
-            $ads_url=ot_get_option( 'ad3_url' );
-            $ads_image=ot_get_option( 'ad3_image' );
+            $ads=ot_get_option( 'ad3' );
           }
           //arts-culture
         ?>
-         <div class="right-banner">
-            <a href="<?php echo $ads_url;?>">
-         <?php 
-          $ext=pathinfo($ads_image, PATHINFO_EXTENSION); 
-          if($ext!='swf'){
-        ?>
-        <img src="<?php echo $ads_image;?>" width="122" height="407">
-        <?php } else { ?>
-          <object id="flashcontent" 
-              classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-              width="122px" 
-              height="407px">
-              <param name="movie" value="<?php echo $ads_image;?>" />
-              <!--[if !IE]>-->
-              <object type="application/x-shockwave-flash" 
-                      data="<?php echo $ads_image;?>" 
-                      width="122px" 
-                      height="407px">
-              <!--<![endif]-->
-             
-                <p>
-                  flash is disabled on your browser
-                </p>
-             
-              <!--[if !IE]>-->
-              </object>
-              <!--<![endif]-->
-             
-            </object>
-        <?php } ?>
-        </a>
-
+        <div class="right-banner">
+          <?php echo $ads;?>    
         </div>
 
         <?php 
@@ -396,42 +365,12 @@
             $ads_image=ot_get_option( 'about-qh_ad4_image' );
           }
           else{
-            $ads_url=ot_get_option( 'ad4_url' );
-            $ads_image=ot_get_option( 'ad4_image' );
+            $ads=ot_get_option( 'ad4' );
           }
           //arts-culture
         ?>
         <div class="column-right-banner"> 
-            <a href="<?php echo $ads_url;?>">
-         <?php 
-          $ext=pathinfo($ads_image, PATHINFO_EXTENSION); 
-          if($ext!='swf'){
-        ?>
-        <img src="<?php echo $ads_image;?>" width="268" height="143">
-        <?php } else { ?>
-          <object id="flashcontent" 
-              classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-              width="268px" 
-              height="143px">
-              <param name="movie" value="<?php echo $ads_image;?>" />
-              <!--[if !IE]>-->
-              <object type="application/x-shockwave-flash" 
-                      data="<?php echo $ads_image;?>" 
-                      width="268px" 
-                      height="143px">
-              <!--<![endif]-->
-             
-                <p>
-                  flash is disabled on your browser
-                </p>
-             
-              <!--[if !IE]>-->
-              </object>
-              <!--<![endif]-->
-             
-            </object>
-        <?php } ?>
-        </a>
+            <?php echo $ads;?>
         </div>
 
         </div>

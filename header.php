@@ -13,6 +13,46 @@
 
 <!-- jQuery -->
 
+<?php 
+  $url=curPageURL();
+  if (strpos($url,'entertainment') !== false) {
+    $ads_url=ot_get_option( 'entertainment_ad1_url' );
+    $ads_image=ot_get_option( 'entertainment_ad1_image' );
+  }
+  else if (strpos($url,'arts-culture') !== false) {
+    $ads_url=ot_get_option( 'arts-culture_ad1_url' );
+    $ads_image=ot_get_option( 'arts-culture_ad1_image' );
+  }
+  else if (strpos($url,'community') !== false) {
+    $ads_url=ot_get_option( 'community_ad1_url' );
+    $ads_image=ot_get_option( 'community_ad1_image' );
+  }
+  else if (strpos($url,'food-dining') !== false) {
+    $ads_url=ot_get_option( 'food-dining_ad1_url' );
+    $ads_image=ot_get_option( 'food-dining_ad1_image' );
+  }
+  else if (strpos($url,'qh-sensation') !== false) {
+    $ads_url=ot_get_option( 'qh-sensation_ad1_url' );
+    $ads_image=ot_get_option( 'qh-sensation_ad1_image' );
+  }
+  else if (strpos($url,'sports') !== false) {
+    $ads_url=ot_get_option( 'sports_ad1_url' );
+    $ads_image=ot_get_option( 'sports_ad1_image' );
+  }
+  else if (strpos($url,'movie') !== false) {
+    $ads_url=ot_get_option( 'movie_ad1_url' );
+    $ads_image=ot_get_option( 'movie_ad1_image' );
+  }
+  else if (strpos($url,'about-qh') !== false) {
+    $ads_url=ot_get_option( 'about-qh_ad1_url' );
+    $ads_image=ot_get_option( 'about-qh_ad1_image' );
+  }
+  else{
+    $header=ot_get_option( 'header1' );
+  }
+  echo $header;
+?>
+ 
 <?php
 
 wp_head();
@@ -174,45 +214,13 @@ wp_head();
             $ads_image=ot_get_option( 'about-qh_ad1_image' );
           }
           else{
-            $ads_url=ot_get_option( 'ad1_url' );
-            $ads_image=ot_get_option( 'ad1_image' );
+            $ads=ot_get_option( 'ad1' );
           }
-          //arts-culture
+          echo $ads;
         ?>
-        	<a href="<?php echo $ads_url;?>">
-         <?php 
-          $ext=pathinfo($ads_url, PATHINFO_EXTENSION); 
-          if($ext!='swf'){
-        ?>
-        <img src="<?php echo $ads_image;?>" width="970" height="90">
-        <?php } else { ?>
-          <object id="flashcontent" 
-              classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-              width="970px" 
-              height="90px">
-              <param name="movie" value="<?php echo $ads_image;?>" />
-              <!--[if !IE]>-->
-              <object type="application/x-shockwave-flash" 
-                      data="<?php echo $ads_image;?>" 
-                      width="970px" 
-                      height="90px">
-              <!--<![endif]-->
-             
-                <p>
-                  flash is disabled on your browser
-                </p>
-             
-              <!--[if !IE]>-->
-              </object>
-              <!--<![endif]-->
-             
-            </object>
-        <?php } ?>
-        </a>
+        	
 
         </div>
-
-
 
         <div class="header-full-cont">
 
@@ -357,41 +365,11 @@ wp_head();
             $ads_image=ot_get_option( 'about-qh_ad2_image' );
           }
           else{
-            $ads_url=ot_get_option( 'ad2_url' );
-            $ads_image=ot_get_option( 'ad2_image' );
+            $ads=ot_get_option( 'ad2' );
           }
-          //arts-culture
+          echo $ads;
         ?>
-        <a href="<?php echo $ads_url;?>">
-         <?php 
-          $ext=pathinfo($ads_image, PATHINFO_EXTENSION); 
-          if($ext!='swf'){
-        ?>
-        <img src="<?php echo $ads_image;?>" width="233" height="200">
-        <?php } else { ?>
-          <object id="flashcontent" 
-              classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-              width="233px" 
-              height="200px">
-              <param name="movie" value="<?php echo $ads_image;?>" />
-              <!--[if !IE]>-->
-              <object type="application/x-shockwave-flash" 
-                      data="<?php echo $ads_image;?>" 
-                      width="233px" 
-                      height="200px">
-              <!--<![endif]-->
-             
-                <p>
-                  flash is disabled on your browser
-                </p>
-             
-              <!--[if !IE]>-->
-              </object>
-              <!--<![endif]-->
-             
-            </object>
-        <?php } ?>
-        </a></div>
+        </div>
                 </div>
             </div>
 
